@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  stock-price-mcp:
+    build: .
+    container_name: stock-price-mcp-server
+    # Remove HTTP-specific settings since we're using stdio
+    stdin_open: true
+    tty: true
+    environment:
+      - TZ=UTC
+    networks:
+      - mcp-network
+
+networks:
+  mcp-network:
+    driver: bridge

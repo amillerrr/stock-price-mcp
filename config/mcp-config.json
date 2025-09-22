@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "stock-price-checker": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "stock-price-mcp:latest"
+      ],
+      "env": {}
+    }
+  }
+}

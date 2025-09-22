@@ -1,0 +1,5 @@
+# Go build artifacts
+stock-price-mcp
+
+.DS_Store
+Thumbs.db
